@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Geo", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: #151740;
+        }
+        form,
+        div,
+        label,
+        input::placeholder,
+        textarea{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        form input{
+            display: flex;
+            width: 350px;
+            height: 35px;
+            position: relative;
+        }
+        form #submit{
+            display: flex;
+            width: 100px;
+            height: 40px;
+            position: relative;
+            font-family: "Geo", sans-serif;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- ACTION - recebe o endereço do arquivo/página externa(internet) para onde os dados
+    serão enviados.
+    METHOD - determina como os dados serão enviados, se visível ou oculto (post ou get). -->
+    <form action="https://formsubmit.co/yuri.s.silva13@aluno.senai.br" method="post">
+
+        <!-- Titulo -->
+        <h1>Cadastro de Cliente</h1>
+
+        <!-- Label e Input Nome -->
+        <div> 
+            <label>Nome
+                <input type="text" name="name" id="name" 
+                placeholder="Nome e sobrenome" maxlength="30" 
+                required autofocus>
+            </label>   
+        </div>
+        <br>
+
+        <!-- Label e Input Rua -->
+        <div>
+            <label>Sua rua
+                <input type="text" name="road" id="road" 
+                placeholder="Ex: Rua Olavo Triplac" maxlength="30"
+                required>
+            </label>
+        </div>
+        <br>
+
+        <!-- Label e Input Numero -->
+        <div>
+            <label>Numero
+                <input type="number" name="number" id="number" 
+                placeholder="Numero de endereço" min="0" max="99999"
+                required>
+            </label>
+        </div>
+        <br>
+
+        <!-- Label e Input UF -->
+        <div>
+            <label>UF
+                <input type="text" name="uf" id="uf" 
+                placeholder="Ex: SP, RJ" maxlength="2"
+                required>
+            </label>
+        </div>
+        <br>
+
+        <!-- Label e Input Bairro -->
+        <div>
+            <label>Seu Bairro
+                <input type="text" name="bairro" id="bairro" 
+                placeholder="Ex: Jardim Silva" maxlength="30"
+                required>
+            </label>
+        </div>
+        <br>
+
+        <!-- Label e Input Telefone -->
+        <div>
+            <label>Telefone
+                <input type="tel" name="tel" id="tel" 
+                placeholder="(00) 00000-0000"
+                required autocomplete="off">
+            </label>
+        </div>
+        <br>
+
+        <!-- Botão Submit -->
+        <div>
+            <label for="submit"></label>
+            <input type="submit" id="submit">
+        </div>
+        <br>
+            
+    </form>
+
+    <!-- CSS -->
+    
+
+</body>
+</html>
